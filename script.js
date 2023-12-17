@@ -5,7 +5,7 @@ AFRAME.registerComponent('markerhandler', {
         marker.addEventListener('markerFound', () => {
             // Marker found, add your 3D model
             const model = document.createElement('a-entity');
-            model.setAttribute('gltf-model', 'url(path/to/your/chemical_structure.gltf)');
+            model.setAttribute('gltf-model', 'url(path/to/your/water_molecule.glb)');
             model.setAttribute('scale', '0.1 0.1 0.1');
 
             marker.appendChild(model);
